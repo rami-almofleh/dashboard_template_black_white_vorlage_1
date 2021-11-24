@@ -3,7 +3,7 @@
   <p class="fw-light mb-4">Transaction of last 6 months</p>
 
   <div class="w-100 table-container">
-    <div :class="{'bg-white rounded-pill shadow-lg' : item.id === 1}" class="row py-3 d-flex align-items-center w-100" style="width: max-content" v-for="item in transection_history" :key="item.title">
+    <div :class="{'bg-white rounded-pill shadow-lg' : item.id === 1}" class="row py-3 d-flex align-items-center text-break" v-for="item in transection_history" :key="item.title">
       <div class="col-auto">
         <div class="avatar rounded-circle overflow-hidden">
           <img :src="item.image" alt="" />
@@ -58,10 +58,12 @@ export default {
   width: 3rem;
 }
 .table-container {
-  word-wrap: break-word;
-  hyphens: auto;
   @media (max-width: 990px) {
     overflow-x: auto;
+
+    .row {
+      width: max-content;
+    }
   }
 }
 </style>

@@ -1,7 +1,6 @@
 <template>
-  <p class="fw-light">Payments updates</p>
-  <div class="gap-4 mt-4 d-flex flex-wrap flex-lg-nowrap">
-    <div v-for="payment in payments" :key="payment" class="flex-grow-1 d-flex align-content-stretch w-25">
+  <div class="row">
+    <div v-for="payment in payments" :key="payment" class="col-6 col-lg-3 mt-3 d-flex align-content-stretch">
       <payments-updates-item :payment="payment" />
     </div>
   </div>

@@ -1,4 +1,7 @@
-# sneakers_configurator
+# Dashboard Template 
+
+## Design URL
+Here [Link](https://dribbble.com/shots/15501287/attachments/7277599?mode=media)
 
 ## Project setup
 ```

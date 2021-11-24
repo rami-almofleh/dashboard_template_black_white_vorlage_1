@@ -3,7 +3,7 @@
     <div class="card-body">
       <h5 class="card-title mb-3">
         <i class="bi bi-sim fs-1 text-white-50 mb-3 d-block"></i>
-        <h4>4353 4445 5690 7634</h4>
+        <h4>XXXX XXXX XXXX XXXX</h4>
       </h5>
       <div class="card-text d-flex justify-content-between align-items-end">
         <p class="text-muted">-------</p>

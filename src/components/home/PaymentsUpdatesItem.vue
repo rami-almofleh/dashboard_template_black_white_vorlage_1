@@ -1,7 +1,7 @@
 <template>
   <div class="card shadow-lg border-0 rounded-standard w-100">
     <div class="card-body px-4">
-      <i class="fw-bolder" :class="payment.img" style="font-size: 4rem"></i>
+      <i class="fw-bolder" :class="payment.img" style="font-size: 3rem;"></i>
       <h6 class="card-text text-black-50">{{ payment.subtitle }}</h6>
       <h3 class="card-title fw-bolder text-capitalize mb-0">{{ payment.title }}</h3>
     </div>
@@ -15,6 +15,5 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" scoped>
 </style>
