@@ -1,0 +1,24 @@
+html,
+body {
+  height: 100%;
+  background-color: #f5f5fc;
+}
+* {
+  box-sizing: border-box;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.input-outline-none {
+  &:focus, &:active {
+    outline: none;
+    box-shadow: none;
+    border-color: $primary;
+  }
+}
+
+.rounded-standard {
+  border-radius: 2rem;
+}
