@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div v-for="payment in payments" :key="payment" class="col-6 col-lg-3 mt-3 d-flex align-content-stretch">
+    <div v-for="payment in payments" :key="payment" class="col-6 col-lg-3 mb-3 d-flex align-content-stretch">
       <payments-updates-item :payment="payment" />
     </div>
   </div>

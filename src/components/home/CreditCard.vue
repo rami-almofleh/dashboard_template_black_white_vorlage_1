@@ -1,9 +1,9 @@
 <template>
-  <div class="card shadow-lg border-0 rounded-standard bg-dark text-white" style="width: 21rem">
+  <div class="card shadow-lg border-0 rounded-standard bg-dark text-white" style="max-width: 21rem">
     <div class="card-body">
       <h5 class="card-title mb-3">
         <i class="bi bi-sim fs-1 text-white-50 mb-3 d-block"></i>
-        <h4>XXXX XXXX XXXX XXXX</h4>
+        <h4 class="text-truncate">XXXX XXXX XXXX XXXX</h4>
       </h5>
       <div class="card-text d-flex justify-content-between align-items-end">
         <p class="text-muted">-------</p>

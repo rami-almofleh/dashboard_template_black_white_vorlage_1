@@ -3,7 +3,7 @@
   <p class="fw-light mb-4">Transaction of last 6 months</p>
 
   <div class="w-100 table-container">
-    <div :class="{'bg-white rounded-pill shadow-lg' : item.id === 1}" class="row py-3 d-flex align-items-center text-break" v-for="item in transection_history" :key="item.title">
+    <div :class="{'bg-white rounded-pill shadow-lg' : item.id === 1}" class="row py-2 d-flex align-items-center text-break" v-for="item in transection_history" :key="item.title">
       <div class="col-auto">
         <div class="avatar rounded-circle overflow-hidden">
           <img :src="item.image" alt="" />
