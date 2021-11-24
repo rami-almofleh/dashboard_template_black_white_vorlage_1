@@ -20,14 +20,22 @@ export default {
         }]
       },
       options: {
+        plugins: {
+          legend: {
+            display: false
+          }
+        },
         scales: {
           y: {
-            beginAtZero: true
+            beginAtZero: true,
           },
-          xAxes: {
+          x: {
             gridLines: {
               display: false
-            }
+            },
+            grid: {
+              display: false,
+            },
           }
         }
       }
@@ -39,7 +47,15 @@ export default {
     Chart.register(...registerables);
 
     const ctx = document.getElementById('barChart').getContext('2d');
+    document.getElementById('barChart').style.height = '20rem';
+    document.getElementById('barChart').style.width = document.getElementById('barChart').parentElement.clientWidth + 'px';
     this.chart = new Chart(ctx, {type: this.type, data: this.data, options: this.options})
+
+    window.onresize=function(){
+      console.log(document.getElementById('barChart').parentElement.clientWidth)
+      document.getElementById('barChart').style.height = '20rem';
+      document.getElementById('barChart').style.width = document.getElementById('barChart').parentElement.clientWidth + 'px';
+    }
   }
 }
 </script>
@@ -48,8 +64,5 @@ export default {
 .chart-container {
   width: 100%;
   position: relative;
-  canvas {
-    height: 22rem !important;
-  }
 }
 </style>
